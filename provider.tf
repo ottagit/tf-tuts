@@ -7,9 +7,12 @@ terraform {
  }
 
  backend "s3" {
-   bucket = "tf-tuts-state"
-   key    = "state"
-   region = "eu-central-1"
- }
+     bucket = "batoto-bitange"
+     key = "global/s3/terraform.tfstate"
+     region = "us-east-1"
+ 
+     dynamodb_table = "terraone-locks"
+     encrypt = true
+   }
 }
 
