@@ -8,7 +8,7 @@ terraform {
 
  backend "s3" {
      bucket = "batoto-bitange"
-     key = "global/s3/terraform-jenkins.tfstate"
+     key = "global/s3/terraformjenkins.tfstate"
      region = "us-east-1"
  
      dynamodb_table = "terraone-locks"
